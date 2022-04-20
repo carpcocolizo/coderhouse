@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Segunda entrega del Proyecto Final</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="titulo" >Resultado operacion anterior:</h1>
+    <div id="resultado"></div>
+    <div id="otroproducto">
+        <h2>Quiere agregar otro producto y verlo en una tabla?</h2>
+          <input type="button" id="agregarsi" value="Claro que si!"><br>
+    </div>
+    <div id="contenedoroculto">
+      <form action="calculo.html" id="agregar">
+        <label for="nombre">Nombre del producto/servicio a vender</label>
+        <input id="nombre" type="text" placeholder="Ingresar venta"><br>
+        <label for="comision">Comision que cobra la plataforma</label>
+        <input id="comision" type="number" step="0.01" placeholder="%"><br>
+        <label for="enmano">Ingresa cuanto queres obtener por la venta</label>
+        <input id="enmano" type="number" step="0.01" placeholder="$"><br>
+        <label for="enviosi">Incluis el envio a tu cargo?</label>
+        <input type="button" id="enviosi" value="Si">
+        <input type="button" id="enviono" value="No"><br>
+        <input type="hidden" step="0.01" placeholder="$" id="envio" value="0"><br>
+        <button type="submit" id="boton">Calcular</button>
+        <p id="error"></p>
+      </form>
+    </div>
+    <div id="productosoculto">
+      <table>
+        <thead>
+             <tr>
+                <th>Nombre</th>
+                <th>Comision</th>
+                <th>Dinero a obtener</th>
+                <th>A cuanto vender</th>
+                <th>Envio</th>
+            </tr>
+        </thead>
+        <tbody id="ventas">
+        </tbody>
+        <tfoot class="thead-dark">
+            <tr>
+                <th>Total: </th>
+                <th></th>
+                <th id="total"></th>
+                <th></th>
+            </tr>
+        </tfoot>
+      </table>
+    </div>  
+    <script src="venta.js"></script>
+    <script src="calculo.js"></script>
+  </body>
+</html>
