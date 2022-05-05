@@ -1,7 +1,8 @@
 /*
-Use la libreria de sweet alert para conseguir una transicion mas "linda" cuando genero la tabla, por lo que al apretar el boton de generar tabla, aparece el alert y hay un timeout de 1 segundo 
-para la creacion de la misma.
-Tambien hice las correciones del Trabajo Final, agregue las variables globales y englobe un par de funciones en una sola.
+Use una API para obtener los datos de cotizaciones de monedas, creo que es relavante por si quisieramos hacer alguna conversion, pensandolo para el proyecto final se podria armar una calculadora
+que permita hacer la conversion.
+https://www.abstractapi.com/exchange-rate-api
+En esa pagina se puede encontrar la informacion de la api.
 */
  
 const agregar = document.getElementById("agregar")
