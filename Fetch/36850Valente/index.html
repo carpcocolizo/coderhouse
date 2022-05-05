@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Segunda entrega del Proyecto Final</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="titulo" >Calcular precio de venta a partir de la comision de la plataforma</h1>
+    <div id="contenedor">
+      <form action="calculo.html" id="agregar">
+        <label for="nombre">Nombre del producto/servicio a vender</label>
+        <input id="nombre" type="text" placeholder="Ingresar venta"><br>
+        <label for="comision">Comision que cobra la plataforma</label>
+        <input id="comision" type="number" step="0.01" placeholder="%"><br>
+        <label for="enmano">Ingresa cuanto queres obtener por la venta</label>
+        <input id="enmano" type="number" step="0.01" placeholder="$"><br>
+        <label for="enviosi">Incluis el envio a tu cargo?</label>
+        <input type="button" id="enviosi" value="Si">
+        <input type="button" id="enviono" value="No"><br>
+        <input type="hidden" step="0.01" placeholder="$" id="envio" value="0"><br>
+        <button type="submit" id="boton">Calcular</button>
+        <p id="error"></p>
+      </form>
+    </div>
+  <div id="cambio"></div>
+  <script src="venta.js"></script>  
+  <script src="script.js"></script>
+  </body>
+</html>
